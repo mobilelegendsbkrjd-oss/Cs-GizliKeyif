@@ -1,3 +1,8 @@
+pluginManagement {
+    plugins {
+        kotlin("jvm") version "2.3.10"
+    }
+}
 rootProject.name = "CloudstreamPlugins"
 
 // This file sets what projects are included. All new projects should get automatically included unless specified in "disabled" variable.

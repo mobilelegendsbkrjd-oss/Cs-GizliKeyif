@@ -6,6 +6,10 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jetbrains.kotlin.gradle.tasks.KotlinJvmCompile
 
+plugins {
+    kotlin("jvm")
+}
+
 buildscript {
     repositories {
         google()
@@ -142,4 +146,10 @@ gradle.taskGraph.whenReady {
             }
         }
     }
+}
+dependencies {
+    implementation(kotlin("stdlib-jdk8"))
+}
+repositories {
+    mavenCentral()
 }
